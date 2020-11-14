@@ -1,0 +1,21 @@
+ion-content{
+  --ion-background-color: linear-gradient(#16A085,#F4D03F);
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  position: relative;
+  height: 250px;
+}
+
+.logo ion-avatar{
+  font-size: 10em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

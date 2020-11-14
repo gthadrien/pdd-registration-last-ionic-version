@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="logo">
+    <ion-avatar><img src="../../assets/icon/icone.png"></ion-avatar>
+  </div>
+  <ion-item>
+    <ion-label color="light">Login</ion-label>
+    <ion-input color="light" type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light">Mot de passe </ion-label>
+    <ion-input color="light" type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-button color="light" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+  </ion-item>
+
+  <ion-button  color="light"expand="block" shape="round" fill="outline" (click)="login()">Connexion</ion-button><br>
+  <!--<ion-button color="light" expand="block" shape="round" fill="outline"  href="/registration">Inscription</ion-button>-->
+
+  <ion-item lines="none">
+    <ion-label color="light" text-center>Ou connectez-vous avec</ion-label>
+  </ion-item>
+
+  <div class="flex">
+    <ion-button color="facebook" shape="round">
+      <ion-icon slot="start" name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+    <ion-button color="google" shape="round">
+      <ion-icon slot="start" name="logo-google"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+</ion-content>

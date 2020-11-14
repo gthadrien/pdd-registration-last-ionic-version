@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-title>Retrait de Badge</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Veuillez nous fournir les informations sur celui qui retire le Badge de <b>{{nomRetraitant}}</b></p>
+  <ion-item>
+    <ion-label>Qui retire ?</ion-label><br>
+    <ion-select placeholder="Selectionner" [(ngModel)]="valeur" (ionChange)="onSelectChange($event)">
+      <ion-select-option value="retraitant">{{nomRetraitant}}</ion-select-option>
+      <ion-select-option value="responsable" >Un Responsable</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-input placeholder="Le nom du Responsable" *ngIf="viewNResp" [(ngModel)]="nomRespo"></ion-input>
+  <ion-button expand="full" color="success" *ngIf="retirer" (click)="retirerBadge()">Retirer</ion-button>
+</ion-content>

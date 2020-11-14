@@ -1,0 +1,8 @@
+{
+  "name": "pdd-registration-app",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

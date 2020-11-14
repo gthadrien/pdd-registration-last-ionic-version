@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-title>Liste des Retraitants</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="success">
+    <ion-searchbar placeholder="Entrez le nom" (ionInput)="FilterJSONData($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-loading *ngIf="busy"></app-loading>
+  <ion-card *ngFor="let retraitant of listRetraitant">
+    <ion-card-header>
+      <ion-card-subtitle>{{ retraitant.Nom }}</ion-card-subtitle>
+      <ion-card-title>{{ retraitant.Prenom  }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Niveau: {{ retraitant.Niveau }}</p>
+      <p>Hall: {{ retraitant.Hall }}</p>
+      <p>Dortoir: {{ retraitant.Dortoir }}</p>
+      <p>Refectoire: {{ retraitant.Refectoire }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

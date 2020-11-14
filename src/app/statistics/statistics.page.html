@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>statistics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-card >
+    <ion-card-header>
+      <ion-card-subtitle>Actuellement</ion-card-subtitle>
+      <ion-card-title>Badges Retirés</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Hommes :{{nbH}}/{{nbHI}} </p>
+      <p>Femmes :{{nbF}}/{{nbFI}} </p>
+      <p>Total :{{nbT}}/{{nbTI}} </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

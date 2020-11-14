@@ -1,0 +1,38 @@
+ion-content{
+    --ion-background-color: linear-gradient(#16A085,#F4D03F);
+  }
+  
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    position: relative;
+    height: 150px;
+  }
+  
+  .logo ion-avatar{
+    font-size: 10em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  h1
+  {
+    font-size: 20px;
+    text-shadow: -1px -1px #eee, 1px 1px #888, -3px 0 4px #000;
+    font-family:"Segoe print", Arial, Helvetica, sans-serif;
+    color:#ccc;
+    padding:16px;
+    font-weight:lighter;
+    -moz-box-shadow: 2px 2px 6px #888;  
+    -webkit-box-shadow: 2px 2px 6px #888;  
+    box-shadow:2px 2px 6px #888;  
+    text-align:center;
+    display:inline;
+    line-height:92px;
+    //background-image:url(images/background-h1-metal.jpg);
+  }

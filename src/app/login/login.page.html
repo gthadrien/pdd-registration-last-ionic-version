@@ -1,0 +1,32 @@
+<ion-tabs >
+  <ion-tab-bar slot="bottom" >
+    <!-- 
+      Pour rendre scrolladble
+      no-padding no-margin class="no-border-radius segment-card"
+    -->
+    <ion-tab-button tab="retreatant" class="segment-item">
+      <ion-icon name="people-circle-outline"></ion-icon>
+      <ion-label>Retraitants</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="retreatant-checkin" class="segment-item">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <ion-label>Check</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="retreatant-checkin-info" class="segment-item">
+      <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+      <ion-label>Validés</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="registration" *ngIf="admin" class="segment-item">
+      <ion-icon name="person-add-outline"></ion-icon>
+      <ion-label>User</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="statistics" *ngIf="admin" class="segment-item">
+      <ion-icon name="stats-chart-outline"></ion-icon>
+      <ion-label>Stats</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
